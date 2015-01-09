@@ -175,13 +175,14 @@ style "button" {
 	bg[ACTIVE]        = shade (0.85, @bg_color)
 }
 
-style "my_button" {
+style "panel_button" {
 	xthickness = 3
 	ythickness = 3
 
 	bg[NORMAL]        = shade (1.04, @bg_color)
 	bg[PRELIGHT] 	  = @selected_bg_color
 	bg[ACTIVE]        = shade (0.85, @bg_color)
+	fg[PRELIGHT] 	  = @selected_fg_color
 }
 
 # The color is changed by the notebook_bg style, this style
@@ -394,8 +395,9 @@ widget_class "*.<GtkCTree>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkList>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkCList>.<GtkButton>" style "treeview_header"
 
-widget "PanelToplevel.*GtkButton*" style "my_button"
-widget "PanelToplevel.*GtkToggleButton*" style "my_button"
+widget "PanelToplevel.*GtkButton*" style "panel_button"
+widget "PanelToplevel.*GtkToggleButton*" style "panel_button"
+widget "PanelToplevel.*GtkLabel*" style "panel_button"
 
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################
