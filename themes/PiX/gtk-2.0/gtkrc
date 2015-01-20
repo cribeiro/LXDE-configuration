@@ -335,9 +335,12 @@ widget_class "*<GtkListItem>*" style "fg_is_text_color_workaround"
 widget_class "*<GtkCList>" style "fg_is_text_color_workaround"
 
 style "panel_button" {
-	xthickness = 3
-	ythickness = 3
+	xthickness = 2
+	ythickness = 2
 
+	GtkButton::child-displacement-x = 0
+	GtkButton::child-displacement-y = 0
+	
 	bg[NORMAL]        = shade (1.04, @bar_bg_color)
 	bg[ACTIVE]        = shade (0.85, @bar_bg_color)
 	fg[NORMAL]		  = @bar_fg_color
