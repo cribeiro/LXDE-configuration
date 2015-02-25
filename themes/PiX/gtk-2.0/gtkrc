@@ -364,3 +364,14 @@ widget "PanelToplevel.*" style "panel_background"
 widget_class "PanelToplevel.*<GtkLabel>" style "panel_button"
 widget_class "PanelToplevel.*<GtkButton>" style "panel_button"
 
+style "panel_window" {
+	bg[NORMAL] = @base_color
+}
+
+style "panel_scale" {
+	bg[NORMAL] = @bg_color
+}
+
+widget "volals*whitewd*" style "panel_window"
+widget "volals*whitewd*volscale*" style "panel_scale"
+
