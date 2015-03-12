@@ -111,6 +111,22 @@ Plugin {
   }
 }
 Plugin {
+	type=dhcpcdui
+	Config {
+	}
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+	type=volumealsa
+	Config {
+	}
+}
+Plugin {
   type=space
   Config {
     Size=2
@@ -120,6 +136,8 @@ Plugin {
   type=cpu
   Config {
     ShowPercent=1
+    Foreground=#a9a9a9a9a9a9
+    Background=#d3d3d3d3d3d3
   }
 }
 Plugin {
