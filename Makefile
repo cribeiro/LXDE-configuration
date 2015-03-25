@@ -1,23 +1,36 @@
 INSTALL=	install
 THEMEDIR=	/home/pi/.themes/
 CONFDIR=	/home/pi/.config/
+GTHEMEDIR=	/usr/share/themes/
 RWPERM=		0666
 
 install:
 	# new theme
 	${INSTALL} -d ${DESTDIR}/usr/share/
-	${INSTALL} -d ${DESTDIR}/usr/share/themes/
-	${INSTALL} -d ${DESTDIR}/usr/share/themes/PiX/
-	${INSTALL} -d ${DESTDIR}/usr/share/themes/PiX/gtk-2.0/
-	${INSTALL} -d ${DESTDIR}/usr/share/themes/PiX/openbox-3/
-	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}/usr/share/themes/PiX/gtk-2.0/
-	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}/usr/share/themes/PiX/openbox-3/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/borders/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
+	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/borders/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/borders/
+	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
 
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/openbox-3/
 	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/borders/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${THEMEDIR}PiX/openbox-3/
 
 	# default config files
