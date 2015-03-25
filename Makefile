@@ -44,6 +44,7 @@ install:
 	${INSTALL} -d ${DESTDIR}${CONFDIR}openbox/
 	${INSTALL} -d ${DESTDIR}${CONFDIR}pcmanfm/
 	${INSTALL} -d ${DESTDIR}${CONFDIR}pcmanfm/LXDE-pi/
+	${INSTALL} -d ${DESTDIR}${CONFDIR}gtk-3.0/
 	${INSTALL} -m ${RWPERM} config/libfm/libfm.conf ${DESTDIR}${CONFDIR}libfm/
 	${INSTALL} -m ${RWPERM} config/lxpanel/launchtaskbar.cfg ${DESTDIR}${CONFDIR}lxpanel/
 	${INSTALL} -m ${RWPERM} config/lxpanel/LXDE-pi/config ${DESTDIR}${CONFDIR}lxpanel/LXDE-pi/
@@ -51,12 +52,13 @@ install:
 	${INSTALL} -m ${RWPERM} config/lxsession/LXDE-pi/* ${DESTDIR}${CONFDIR}lxsession/LXDE-pi/
 	${INSTALL} -m ${RWPERM} config/openbox/lxde-pi-rc.xml ${DESTDIR}${CONFDIR}openbox/
 	${INSTALL} -m ${RWPERM} config/pcmanfm/LXDE-pi/* ${DESTDIR}${CONFDIR}pcmanfm/LXDE-pi/
+	${INSTALL} -m ${RWPERM} config/gtk-3.0/gtk.css ${DESTDIR}${CONFDIR}gtk-3.0/
 	${INSTALL} -m ${RWPERM} config/Trolltech.conf ${DESTDIR}${CONFDIR}
 
 	# network configuration
 	${INSTALL} -m ${RWPERM} etc/network/interfaces ${DESTDIR}/etc/network/
 	
-	sudo chown -R 1000:1000 ${DESTDIR}${THEMEDIR}
-	sudo chown -R 1000:1000 ${DESTDIR}${CONFDIR}
+	sudo chown -R pi:pi ${DESTDIR}${THEMEDIR}
+	sudo chown -R pi:pi ${DESTDIR}${CONFDIR}
 
 

@@ -2222,7 +2222,7 @@ GtkComboBox .button:hover {
 }
 /*
 .scrollbar.slider:hover {
-    transition: 1000ms linear; /* doesn't work */
+    transition: 1000ms linear;
     background-image: none;
     background-color: @scrollbar_slider_prelight;
     border-style: solid;
