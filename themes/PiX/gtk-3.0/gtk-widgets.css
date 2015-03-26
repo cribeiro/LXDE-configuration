@@ -2296,7 +2296,9 @@ GtkTreeMenu .menuitem,
     background-color: @menu_bg_color;
     color: @menu_fg_color;
     padding: 0;
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @borders;
 }
 
 .menu.button {
@@ -2360,6 +2362,9 @@ GtkTreeMenu .menuitem,
 
 .menu .menuitem:active,
 .menu .menuitem:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: mix (@theme_selected_bg_color, black, 0.5);
     background-color: @theme_selected_bg_color;
 }
 
