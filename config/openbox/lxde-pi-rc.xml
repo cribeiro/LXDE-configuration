@@ -285,11 +285,6 @@
         <command>lxpanelctl menu</command>
       </action>
     </keybind>
-    <keybind key="F13">
-      <action name="Execute">
-        <command>lxpanelctl menu</command>
-      </action>
-    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <command>lxpanelctl run</command>
