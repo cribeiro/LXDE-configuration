@@ -2,6 +2,7 @@ INSTALL=	install
 THEMEDIR=	/home/pi/.themes/
 CONFDIR=	/home/pi/.config/
 GTHEMEDIR=	/usr/share/themes/
+GFONTDIR=	/usr/share/fonts/
 RWPERM=		0666
 
 install:
@@ -32,6 +33,12 @@ install:
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/borders/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${THEMEDIR}PiX/openbox-3/
+	
+	# Roboto font with fixes...
+	${INSTALL} -d ${DESTDIR}${GFONTDIR}
+	${INSTALL} -d ${DESTDIR}${GFONTDIR}truetype/
+	${INSTALL} -d ${DESTDIR}${GFONTDIR}truetype/roboto/
+	${INSTALL} -m ${RWPERM} -D fonts/truetype/roboto/*.* ${DESTDIR}${GFONTDIR}truetype/roboto/
 
 	# default config files
 	${INSTALL} -d ${DESTDIR}${CONFDIR}
