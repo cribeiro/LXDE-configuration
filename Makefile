@@ -13,12 +13,10 @@ install:
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
-	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
 	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
-	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/borders/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
 
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}
@@ -26,12 +24,10 @@ install:
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
-	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/openbox-3/
 	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
-	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/borders/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/borders/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${THEMEDIR}PiX/openbox-3/
 	
 	# Roboto font with fixes...
