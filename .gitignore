@@ -1,2 +1,12 @@
+config.log
+config.status
+.deps/
+.libs/
+libtool
+autom4te.cache/
+*.gmo
+*.la
+*.lo
 .DS_Store
+Makefile
 
