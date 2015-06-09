@@ -44,10 +44,14 @@ style "default"
 	GtkScrolledWindow::scrollbar-spacing		= 0
 	GtkScrolledWindow::scrollbars-within-bevel	= 1
 
-	GtkVScale::slider_length 	= 16
-	GtkVScale::slider_width 	= 16
-	GtkHScale::slider_length 	= 16
-	GtkHScale::slider_width 	= 16
+	GtkVScale::slider_length 	= 24
+	GtkVScale::slider_width 	= 24
+	GtkHScale::slider_length 	= 24
+	GtkHScale::slider_width 	= 24
+	GtkScale::trough-side-details = 1
+	
+	GtkProgressBar::min-horizontal-bar-height = 2
+	GtkProgressBar::min-vertical-bar-width = 2
 
 	GtkStatusbar::shadow_type	= GTK_SHADOW_NONE
 	GtkSpinButton::shadow_type 	= GTK_SHADOW_NONE
@@ -1085,7 +1089,9 @@ style "notebook_entry"
 
         base[NORMAL] 		= @base_color
         base[INSENSITIVE] 	= @insensitive_bg_color
-
+        
+    engine "clearlookspix" {}        
+/*
 	engine "pixmap"
 	{
 	image
@@ -1136,6 +1142,7 @@ style "notebook_entry"
 		stretch			= TRUE
 	}
 	}
+*/
 }
 
 style "notebook_tab_label"
@@ -1744,10 +1751,10 @@ style "notebook"
   xthickness	= 5
   ythickness	= 2
   
-  engine "clearlooks" {
-  }
+  engine "clearlookspix" {}
 
-/*  engine "pixmap" 
+/*
+  engine "pixmap" 
   {
     image 
     {
@@ -1870,7 +1877,8 @@ style "notebook"
 	border			= { 4, 4, 4, 4 }
 	stretch			= TRUE
     }
-  }*/
+  }
+*/
 }
 
 style "handlebox"
@@ -1919,6 +1927,8 @@ style "combobox_button"
 
 style "range"
 {	
+  engine "clearlookspix" {}
+/*
   engine "pixmap" 
   {
     image 
@@ -2022,6 +2032,7 @@ style "range"
     }
 
   }
+*/
 }
 
 style "progressbar"
@@ -2029,11 +2040,10 @@ style "progressbar"
   xthickness            		= 1
   ythickness            		= 1
   
-  engine "clearlooks" {
-    hint = "progressbar"
-  }
+  engine "clearlookspix" {}
 
-  /*engine "pixmap" 
+/*
+  engine "pixmap" 
   {
     image
     {
@@ -2071,7 +2081,8 @@ style "progressbar"
       border				= { 3, 3, 3, 3 }
       orientation			= VERTICAL
     }
-  }*/
+  }
+*/
 }
 
 style "separator_menu_item" 
@@ -2411,8 +2422,7 @@ style "panel_button" {
 	bg[PRELIGHT] 	  = @selected_bg_color
 	fg[PRELIGHT] 	  = @selected_fg_color	
 	
-	engine "clearlooks" {
-	}
+	engine "clearlooks" {}
 }
 
 style "panel_background" {
