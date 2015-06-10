@@ -2422,7 +2422,7 @@ style "panel_button" {
 	bg[PRELIGHT] 	  = @selected_bg_color
 	fg[PRELIGHT] 	  = @selected_fg_color	
 	
-	engine "clearlooks" {}
+	engine "clearlookspix" {}
 }
 
 style "panel_background" {
