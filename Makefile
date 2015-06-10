@@ -11,10 +11,42 @@ install:
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Arrows/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Buttons/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Check-Radio/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Entry/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Expanders/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Handles/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Lines/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Menu-Menubar/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Others/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/ProgressBar/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Range/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Scrollbars/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Shadows/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Spin/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Tabs/
+	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Toolbar/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
 	${INSTALL} -d ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
 	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Arrows/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Arrows/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Buttons/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Buttons/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Check-Radio/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Check-Radio/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Entry/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Entry/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Expanders/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Expanders/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Handles/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Handles/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Lines/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Lines/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Menu-Menubar/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Menu-Menubar/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Others/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Others/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/ProgressBar/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/ProgressBar/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Range/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Range/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Scrollbars/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Scrollbars/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Shadows/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Shadows/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Spin/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Spin/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Tabs/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Tabs/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Toolbar/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-2.0/Toolbar/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
@@ -22,10 +54,42 @@ install:
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Arrows/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Buttons/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Check-Radio/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Entry/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Expanders/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Handles/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Lines/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Menu-Menubar/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Others/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/ProgressBar/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Range/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Scrollbars/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Shadows/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Spin/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Tabs/
+	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Toolbar/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/openbox-3/
 	${INSTALL} -m ${RWPERM} themes/PiX/gtk-2.0/gtkrc ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Arrows/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Arrows/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Buttons/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Buttons/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Check-Radio/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Check-Radio/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Entry/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Entry/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Expanders/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Expanders/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Handles/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Handles/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Lines/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Lines/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Menu-Menubar/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Menu-Menubar/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Others/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Others/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/ProgressBar/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/ProgressBar/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Range/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Range/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Scrollbars/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Scrollbars/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Shadows/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Shadows/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Spin/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Spin/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Tabs/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Tabs/
+	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-2.0/Toolbar/* ${DESTDIR}${THEMEDIR}PiX/gtk-2.0/Toolbar/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${THEMEDIR}PiX/gtk-3.0/assets/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${THEMEDIR}PiX/openbox-3/
