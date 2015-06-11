@@ -1018,6 +1018,7 @@ style "button_nohilight"
 
 style "checkbutton"
 {
+  bg[PRELIGHT] = @bg_color
   fg[PRELIGHT] = @text_color
   fg[ACTIVE]   = @text_color
 }
