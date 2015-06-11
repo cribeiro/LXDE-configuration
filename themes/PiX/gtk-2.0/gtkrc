@@ -120,7 +120,7 @@ style "default"
             recolorable     		= TRUE
             state 			= PRELIGHT
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/checkbox-unchecked.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -165,7 +165,7 @@ style "default"
             recolorable     		= TRUE
 	    	  state 		= PRELIGHT
             shadow          		= IN
-            overlay_file    		= "Check-Radio/checkbox-checked.png"
+            overlay_file    		= "Check-Radio/checkbox-checked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -211,7 +211,7 @@ style "default"
             function        		= OPTION
             state 			= PRELIGHT
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/option-unchecked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -251,7 +251,7 @@ style "default"
             function        		= OPTION
 	    state			= PRELIGHT
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/option-checked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
