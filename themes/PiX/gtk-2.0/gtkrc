@@ -1030,7 +1030,6 @@ style "entry"
 
     base[NORMAL]        = @base_color
     base[INSENSITIVE]   = @insensitive_bg_color
-	base[SELECTED]		= @base_color
 	base[ACTIVE]		= @base_color
 
     engine "clearlookspix" {}
@@ -1094,7 +1093,6 @@ style "notebook_entry"
 
     base[NORMAL] 		= @base_color
     base[INSENSITIVE] 	= @insensitive_bg_color
-	base[SELECTED]		= @base_color
 	base[ACTIVE]		= @base_color
         
     engine "clearlookspix" {}
