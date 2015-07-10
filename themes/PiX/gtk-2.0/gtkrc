@@ -1026,12 +1026,16 @@ style "checkbutton"
 style "entry"
 {
 	xthickness	= 3
-	ythickness   	= 4
+	ythickness  = 4
 
-        base[NORMAL] = @base_color
-        base[INSENSITIVE] = @insensitive_bg_color
+    base[NORMAL]        = @base_color
+    base[INSENSITIVE]   = @insensitive_bg_color
+	base[SELECTED]		= @base_color
+	base[ACTIVE]		= @base_color
 
-	engine "pixmap"
+    engine "clearlookspix" {}
+
+/*	engine "pixmap"
 	{
 	image
 	{
@@ -1080,20 +1084,22 @@ style "entry"
 		border			= { 0, 0, 0, 0 }
 		stretch			= TRUE
 	}
-    }
+    }*/
 }
 
 style "notebook_entry"
 {
 	xthickness	= 3
-	ythickness   	= 4
+	ythickness  = 4
 
-        base[NORMAL] 		= @base_color
-        base[INSENSITIVE] 	= @insensitive_bg_color
+    base[NORMAL] 		= @base_color
+    base[INSENSITIVE] 	= @insensitive_bg_color
+	base[SELECTED]		= @base_color
+	base[ACTIVE]		= @base_color
         
-    engine "clearlookspix" {}        
-/*
-	engine "pixmap"
+    engine "clearlookspix" {}
+
+/*	engine "pixmap"
 	{
 	image
 	{
@@ -1142,8 +1148,7 @@ style "notebook_entry"
 		border			= { 0, 0, 0, 0 }
 		stretch			= TRUE
 	}
-	}
-*/
+	}*/
 }
 
 style "notebook_tab_label"
