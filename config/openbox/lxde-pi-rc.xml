@@ -279,6 +279,11 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
+      </action>
+    </keybind>
     <!--keybindings for LXPanel -->
     <keybind key="Super_L">
       <action name="Execute">
