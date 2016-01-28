@@ -71,10 +71,10 @@ Plugin {
       id=/usr/share/raspi-ui-overrides/applications/lxterminal.desktop
     }
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/wolfram-mathematica.desktop
+      id=/usr/share/applications/wolfram-mathematica.desktop
     }
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/wolfram-language.desktop
+      id=/usr/share/applications/wolfram-language.desktop
     }
   }
 }
