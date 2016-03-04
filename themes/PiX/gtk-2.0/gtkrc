@@ -1020,48 +1020,6 @@ style "button"
 	}
 }
 
-style "button_nohilight"
-{
-	xthickness	= 3
-	ythickness	= 3
-
-	engine "pixmap"
-	{
-		image
-		{
-			function				= BOX
-			state					= NORMAL
-			file					= "Buttons/button-default-nohilight.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-		image
-		{
-			function				= BOX
-			state					= PRELIGHT
-			file					= "Buttons/button-prelight-nohilight.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-		image
-		{
-			function				= BOX
-			state					= ACTIVE
-			file					= "Buttons/button-pressed-nohilight.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-		image
-		{
-			function				= BOX
-			state					= INSENSITIVE
-			file					= "Buttons/button-insensitive-nohilight.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-	}
-}
-
 style "checkbutton"
 {
 	bg[PRELIGHT] = @bg_color
@@ -1124,14 +1082,6 @@ style "handlebox"
 			shadow						= OUT
 		}
 	}
-}
-
-style "button_separator"
-{
-	xthickness = 0
-	ythickness = 0
-
-	GtkWidget::wide-separators = 1
 }
 
 style "range"
@@ -1213,9 +1163,7 @@ style "tooltips"
 class "GtkWidget"								style "default"
 
 # subclasses
-widget_class "*<GtkButton>*<GtkSeparator>*"		style "button_separator"
 widget_class "*<GtkCheckButton>*"				style "checkbutton"
-widget_class "*<GtkInfoBar>*<GtkButton>*"		style "button_nohilight"
 widget_class "*<GtkProgressBar>*"				style "progressbar"
 widget_class "*<GtkSpinButton>*"				style "spinbutton"
 
@@ -1237,7 +1185,7 @@ widget_class "*<GtkMenuBar>.<GtkMenuItem>*"		style "menubar_item"
 widget_class "*<GtkSeparatorMenuItem>*"			style "separator_menu_item"
 
 # containers
-widget_class "*<GtkNotebook>*"					style "notebook"
+widget_class "*<GtkNotebook>"					style "notebook"
 widget_class "*<GtkTreeView>*<GtkButton>*"		style "treeview_header"
 
 # widgets
