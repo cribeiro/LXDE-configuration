@@ -114,219 +114,43 @@ style "default"
 
 	engine "pixmap"
 	{
-		# Check Buttons
-
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= NORMAL
-				shadow					= OUT
-				overlay_file			= "Check-Radio/checkbox-unchecked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= PRELIGHT
-				shadow					= OUT
-				overlay_file			= "Check-Radio/checkbox-unchecked-hover.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= ACTIVE
-				shadow					= OUT
-				overlay_file			= "Check-Radio/checkbox-unchecked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= SELECTED
-				shadow					= OUT
-				overlay_file			= "Check-Radio/checkbox-unchecked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= INSENSITIVE
-				shadow					= OUT
-				overlay_file			= "Check-Radio/checkbox-unchecked-insensitive.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= NORMAL
-				shadow					= IN
-				overlay_file			= "Check-Radio/checkbox-checked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= PRELIGHT
-				shadow					= IN
-				overlay_file			= "Check-Radio/checkbox-checked-hover.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= ACTIVE
-				shadow					= IN
-				overlay_file			= "Check-Radio/checkbox-checked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= SELECTED
-				shadow					= IN
-				overlay_file			= "Check-Radio/checkbox-checked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= CHECK
-				recolorable				= TRUE
-				state					= INSENSITIVE
-				shadow					= IN
-				overlay_file			= "Check-Radio/checkbox-checked-insensitive.png"
-				overlay_stretch			= FALSE
-		}
-
-		# Radio Buttons
-
-		image
-		{
-				function				= OPTION
-				state					= NORMAL
-				shadow					= OUT
-				overlay_file			= "Check-Radio/option-unchecked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= PRELIGHT
-				shadow					= OUT
-				overlay_file			= "Check-Radio/option-unchecked-hover.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= ACTIVE
-				shadow					= OUT
-				overlay_file			= "Check-Radio/option-unchecked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= SELECTED
-				shadow					= OUT
-				overlay_file			= "Check-Radio/option-unchecked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= INSENSITIVE
-				shadow					= OUT
-				overlay_file			= "Check-Radio/option-unchecked-insensitive.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= NORMAL
-				shadow					= IN
-				overlay_file			= "Check-Radio/option-checked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= PRELIGHT
-				shadow					= IN
-				overlay_file			= "Check-Radio/option-checked-hover.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= ACTIVE
-				shadow					= IN
-				overlay_file			= "Check-Radio/option-checked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= SELECTED
-				shadow					= IN
-				overlay_file			= "Check-Radio/option-checked.png"
-				overlay_stretch			= FALSE
-		}
-		image
-		{
-				function				= OPTION
-				state					= INSENSITIVE
-				shadow					= IN
-				overlay_file			= "Check-Radio/option-checked-insensitive.png"
-				overlay_stretch			= FALSE
-		}
-
 		# Arrows
 
 		image
 		{
-				function				= ARROW
-				state					= NORMAL
-				overlay_file			= "Arrows/arrow-up.png"
-				overlay_border			= { 0, 0, 0, 0 }
-				overlay_stretch			= FALSE
-				arrow_direction			= UP
+				function			= ARROW
+				state				= NORMAL
+				overlay_file		= "Arrows/arrow-up.png"
+				overlay_border		= { 0, 0, 0, 0 }
+				overlay_stretch		= FALSE
+				arrow_direction		= UP
 		}
 		image
 		{
-				function				= ARROW
-				state					= PRELIGHT
-				overlay_file			= "Arrows/arrow-up-prelight.png"
-				overlay_border			= { 0, 0, 0, 0 }
-				overlay_stretch			= FALSE
-				arrow_direction			= UP
+				function			= ARROW
+				state				= PRELIGHT
+				overlay_file		= "Arrows/arrow-up-prelight.png"
+				overlay_border		= { 0, 0, 0, 0 }
+				overlay_stretch		= FALSE
+				arrow_direction		= UP
 		}
 		image
 		{
-				function				= ARROW
-				state					= ACTIVE
-				overlay_file			= "Arrows/arrow-up-prelight.png"
-				overlay_border			= { 0, 0, 0, 0 }
-				overlay_stretch			= FALSE
-				arrow_direction			= UP
+				function			= ARROW
+				state				= ACTIVE
+				overlay_file		= "Arrows/arrow-up-prelight.png"
+				overlay_border		= { 0, 0, 0, 0 }
+				overlay_stretch		= FALSE
+				arrow_direction		= UP
 		}
 		image
 		{
-				function				= ARROW
-				state					= INSENSITIVE
-				overlay_file			= "Arrows/arrow-up-insens.png"
-				overlay_border			= { 0, 0, 0, 0 }
-				overlay_stretch			= FALSE
-				arrow_direction			= UP
+				function			= ARROW
+				state				= INSENSITIVE
+				overlay_file		= "Arrows/arrow-up-insens.png"
+				overlay_border		= { 0, 0, 0, 0 }
+				overlay_stretch		= FALSE
+				arrow_direction		= UP
 		}
 
 		image
@@ -978,85 +802,190 @@ style "menubar_item"
 	fg[PRELIGHT]	= @text_color
 }
 
-style "button"
-{
-	xthickness	= 3
-	ythickness	= 3
-
-	engine "pixmap"
-	{
-		image
-		{
-			function				= BOX
-			state					= NORMAL
-			file					= "Buttons/button-default.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-		image
-		{
-			function				= BOX
-			state					= PRELIGHT
-			file					= "Buttons/button-prelight.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-		image
-		{
-			function				= BOX
-			state					= ACTIVE
-			file					= "Buttons/button-pressed.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-		image
-		{
-			function				= BOX
-			state					= INSENSITIVE
-			file					= "Buttons/button-insensitive.png"
-			border					= { 4, 4, 4, 4 }
-			stretch					= TRUE
-		}
-	}
-}
-
 style "checkbutton"
 {
 	bg[PRELIGHT] = @bg_color
 	fg[PRELIGHT] = @text_color
 	fg[ACTIVE]	 = @text_color
-}
 
-style "entry"
-{
-	xthickness	= 4
-	ythickness	= 4
+	engine "pixmap" {
 
-	base[NORMAL]		= @base_color
-	base[INSENSITIVE]	= @insensitive_bg_color
-	base[ACTIVE]		= @base_color
-	text[ACTIVE]		= @text_color
+		# Check Buttons
 
-	engine "clearlookspix" {}
-}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= NORMAL
+				shadow					= OUT
+				overlay_file			= "Check-Radio/checkbox-unchecked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= PRELIGHT
+				shadow					= OUT
+				overlay_file			= "Check-Radio/checkbox-unchecked-hover.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= ACTIVE
+				shadow					= OUT
+				overlay_file			= "Check-Radio/checkbox-unchecked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= SELECTED
+				shadow					= OUT
+				overlay_file			= "Check-Radio/checkbox-unchecked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= INSENSITIVE
+				shadow					= OUT
+				overlay_file			= "Check-Radio/checkbox-unchecked-insensitive.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= NORMAL
+				shadow					= IN
+				overlay_file			= "Check-Radio/checkbox-checked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= PRELIGHT
+				shadow					= IN
+				overlay_file			= "Check-Radio/checkbox-checked-hover.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= ACTIVE
+				shadow					= IN
+				overlay_file			= "Check-Radio/checkbox-checked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= SELECTED
+				shadow					= IN
+				overlay_file			= "Check-Radio/checkbox-checked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= CHECK
+				recolorable				= TRUE
+				state					= INSENSITIVE
+				shadow					= IN
+				overlay_file			= "Check-Radio/checkbox-checked-insensitive.png"
+				overlay_stretch			= FALSE
+		}
 
-style "clpengine"
-{
-	engine "clearlookspix" {}
-}
+		# Radio Buttons
 
-style "spinbutton"
-{
-	xthickness = 4
-	ythickness = 4
-}
-
-style "notebook"
-{
-	xthickness = 5
-	ythickness = 2
-
-	engine "clearlookspix" {}
+		image
+		{
+				function				= OPTION
+				state					= NORMAL
+				shadow					= OUT
+				overlay_file			= "Check-Radio/option-unchecked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= PRELIGHT
+				shadow					= OUT
+				overlay_file			= "Check-Radio/option-unchecked-hover.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= ACTIVE
+				shadow					= OUT
+				overlay_file			= "Check-Radio/option-unchecked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= SELECTED
+				shadow					= OUT
+				overlay_file			= "Check-Radio/option-unchecked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= INSENSITIVE
+				shadow					= OUT
+				overlay_file			= "Check-Radio/option-unchecked-insensitive.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= NORMAL
+				shadow					= IN
+				overlay_file			= "Check-Radio/option-checked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= PRELIGHT
+				shadow					= IN
+				overlay_file			= "Check-Radio/option-checked-hover.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= ACTIVE
+				shadow					= IN
+				overlay_file			= "Check-Radio/option-checked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= SELECTED
+				shadow					= IN
+				overlay_file			= "Check-Radio/option-checked.png"
+				overlay_stretch			= FALSE
+		}
+		image
+		{
+				function				= OPTION
+				state					= INSENSITIVE
+				shadow					= IN
+				overlay_file			= "Check-Radio/option-checked-insensitive.png"
+				overlay_stretch			= FALSE
+		}
+	}
 }
 
 style "handlebox"
@@ -1082,19 +1011,6 @@ style "handlebox"
 			shadow						= OUT
 		}
 	}
-}
-
-style "range"
-{	
-	engine "clearlookspix" {}
-}
-
-style "progressbar"
-{
-  xthickness = 1
-  ythickness = 1
-  
-  engine "clearlookspix" {}
 }
 
 style "separator_menu_item" 
@@ -1157,44 +1073,69 @@ style "tooltips"
 	bg[SELECTED]  = @tooltip_bg_color
 }
 
+# Theme styles listed below use the modified clearlooks engine
+
+style "clpengine"
+{
+	engine "clearlookspix" {}
+}
+
+style "button"
+{
+	xthickness	= 3
+	ythickness	= 3
+	bg[PRELIGHT]		= shade (1.5, @bg_color)
+
+    engine "clearlookspix" {}
+}
+
+style "entry"
+{
+	xthickness	= 4
+	ythickness	= 4
+
+	base[NORMAL]		= @base_color
+	base[INSENSITIVE]	= @insensitive_bg_color
+	base[ACTIVE]		= @base_color
+	text[ACTIVE]		= @text_color
+
+	engine "clearlookspix" {}
+}
+
+style "notebook"
+{
+	xthickness = 5
+	ythickness = 2
+
+	engine "clearlookspix" {}
+}
+
 # Mapping of classes onto styles - do not reorder this section
 
-# default
 class "GtkWidget"								style "default"
 
-# subclasses
-widget_class "*<GtkCheckButton>*"				style "checkbutton"
-widget_class "*<GtkProgressBar>*"				style "progressbar"
-widget_class "*<GtkSpinButton>*"				style "spinbutton"
 
-# bins
 widget_class "*<GtkButton>*"					style "button"
+widget_class "*<GtkSpinButton>*"				style "button"
+widget_class "*<GtkCheckButton>*"				style "checkbutton"
+widget_class "*<GtkProgressBar>*"				style "clpengine"
 widget_class "*<GtkComboBox>*"					style "clpengine"
 widget_class "*<GtkFileChooser>*"				style "clpengine"
 widget_class "*<GtkFontButton>*"				style "clpengine"
 widget_class "*<GtkHandleBox>*"					style "handlebox"
 widget_class "*<GtkScrolledWindow>*"			style "scrolled_window"
-
-# menus
 widget_class "*<GtkMenuBar>*"					style "menubar"
 widget_class "*<GtkMenu>*"						style "menu"
-
-# menu subclasses
 widget_class "*<GtkMenuItem>*"					style "menu_item"
 widget_class "*<GtkMenuBar>.<GtkMenuItem>*"		style "menubar_item"
 widget_class "*<GtkSeparatorMenuItem>*"			style "separator_menu_item"
-
-# containers
 widget_class "*<GtkNotebook>"					style "notebook"
 widget_class "*<GtkTreeView>*<GtkButton>*"		style "treeview_header"
-
-# widgets
 widget_class "*<GtkEntry>*"						style "entry"
 widget_class "*<GtkOldEditable>*"				style "entry"
-widget_class "*<GtkRange>*"						style "range"
+widget_class "*<GtkRange>*"						style "clpengine"
 widget_class "*<GtkScrollbar>*"					style "scrollbar"
 
-# tooltips - these don't fit into a class for some reason...
 widget "gtk-tooltip*"							style "tooltips"
 
 
