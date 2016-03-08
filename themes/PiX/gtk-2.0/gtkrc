@@ -1089,6 +1089,15 @@ style "button"
     engine "clearlookspix" {}
 }
 
+style "colorbutton"
+{
+	xthickness	= 2
+	ythickness	= 2
+	bg[PRELIGHT]		= shade (1.5, @bg_color)
+
+    engine "clearlookspix" {}
+}
+
 style "entry"
 {
 	xthickness	= 4
@@ -1117,6 +1126,7 @@ class "GtkWidget"								style "default"
 
 widget_class "*<GtkButton>*"					style "button"
 widget_class "*<GtkSpinButton>*"				style "button"
+widget_class "*<GtkColorButton>*"				style "colorbutton"
 widget_class "*<GtkCheckButton>*"				style "checkbutton"
 widget_class "*<GtkProgressBar>*"				style "clpengine"
 widget_class "*<GtkComboBox>*"					style "clpengine"
