@@ -374,88 +374,6 @@ style "default"
 				overlay_stretch		= FALSE
 		}
 
-		# Frames
-
-		image
-		{
-			function				= SHADOW
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			shadow					= IN
-		}
-		image
-		{
-			function				= SHADOW_GAP
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			gap_start_file			= "Shadows/frame-gap-start.png"
-			gap_start_border		= { 1, 0, 0, 0 }
-			gap_end_file			= "Shadows/frame-gap-end.png"
-			gap_end_border			= { 0, 1, 0, 0 }
-			shadow					= IN
-		}
-		image
-		{
-			function				= SHADOW
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			shadow					= OUT
-		}
-		image
-		{
-			function				= SHADOW_GAP
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			gap_start_file			= "Shadows/frame-gap-start.png"
-			gap_start_border		= { 1, 0, 0, 0 }
-			gap_end_file			= "Shadows/frame-gap-end.png"
-			gap_end_border			= { 0, 1, 0, 0 }
-			shadow					= OUT
-		}
-		image
-		{
-			function				= SHADOW
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			shadow					= ETCHED_IN
-		}
-		image
-		{
-			function				= SHADOW_GAP
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			gap_start_file			= "Shadows/frame-gap-start.png"
-			gap_start_border		= { 1, 0, 0, 0 }
-			gap_end_file			= "Shadows/frame-gap-end.png"
-			gap_end_border			= { 0, 1, 0, 0 }
-			shadow					= ETCHED_IN
-		}
-		image
-		{
-			function				= SHADOW
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			shadow					= ETCHED_OUT
-		}
-		image
-		{
-			function				= SHADOW_GAP
-			file					= "Shadows/frame.png"
-			border					= { 1, 1, 1, 1 }
-			stretch					= TRUE
-			gap_start_file			= "Shadows/frame-gap-start.png"
-			gap_start_border		= { 1, 0, 0, 0 }
-			gap_end_file			= "Shadows/frame-gap-end.png"
-			gap_end_border			= { 0, 1, 0, 0 }
-			shadow					= ETCHED_OUT
-		}
 	}
 }
 
@@ -1063,6 +981,95 @@ style "scrolled_window"
 	}
 }
 
+style "frame"
+{
+    engine "pixmap"
+    {
+		# Frames
+
+		image
+		{
+			function				= SHADOW
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			shadow					= IN
+		}
+		image
+		{
+			function				= SHADOW_GAP
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			gap_start_file			= "Shadows/frame-gap-start.png"
+			gap_start_border		= { 1, 0, 0, 0 }
+			gap_end_file			= "Shadows/frame-gap-end.png"
+			gap_end_border			= { 0, 1, 0, 0 }
+			shadow					= IN
+		}
+		image
+		{
+			function				= SHADOW
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			shadow					= OUT
+		}
+		image
+		{
+			function				= SHADOW_GAP
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			gap_start_file			= "Shadows/frame-gap-start.png"
+			gap_start_border		= { 1, 0, 0, 0 }
+			gap_end_file			= "Shadows/frame-gap-end.png"
+			gap_end_border			= { 0, 1, 0, 0 }
+			shadow					= OUT
+		}
+		image
+		{
+			function				= SHADOW
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			shadow					= ETCHED_IN
+		}
+		image
+		{
+			function				= SHADOW_GAP
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			gap_start_file			= "Shadows/frame-gap-start.png"
+			gap_start_border		= { 1, 0, 0, 0 }
+			gap_end_file			= "Shadows/frame-gap-end.png"
+			gap_end_border			= { 0, 1, 0, 0 }
+			shadow					= ETCHED_IN
+		}
+		image
+		{
+			function				= SHADOW
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			shadow					= ETCHED_OUT
+		}
+		image
+		{
+			function				= SHADOW_GAP
+			file					= "Shadows/frame.png"
+			border					= { 1, 1, 1, 1 }
+			stretch					= TRUE
+			gap_start_file			= "Shadows/frame-gap-start.png"
+			gap_start_border		= { 1, 0, 0, 0 }
+			gap_end_file			= "Shadows/frame-gap-end.png"
+			gap_end_border			= { 0, 1, 0, 0 }
+			shadow					= ETCHED_OUT
+		}
+    }
+}
+
 style "tooltips"
 {
 	xthickness	= 8
@@ -1123,7 +1130,6 @@ style "notebook"
 
 class "GtkWidget"								style "default"
 
-
 widget_class "*<GtkButton>*"					style "button"
 widget_class "*<GtkSpinButton>*"				style "button"
 widget_class "*<GtkColorButton>*"				style "colorbutton"
@@ -1145,6 +1151,7 @@ widget_class "*<GtkEntry>*"						style "entry"
 widget_class "*<GtkOldEditable>*"				style "entry"
 widget_class "*<GtkRange>*"						style "clpengine"
 widget_class "*<GtkScrollbar>*"					style "scrollbar"
+widget_class "*<GtkFrame>"					    style "frame"
 
 widget "gtk-tooltip*"							style "tooltips"
 
@@ -1187,6 +1194,9 @@ widget_class "PanelToplevel.*<GtkButton>" style "panel_button"
 # Pi LXPanel VolumeALSA plugin
 
 style "panel_window" {
+    xthickness = 0
+    ythickness = 0
+
 	bg[NORMAL] = @base_color
 }
 
