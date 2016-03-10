@@ -1197,11 +1197,12 @@ style "panel_window" {
     xthickness = 0
     ythickness = 0
 
-	bg[NORMAL] = @base_color
+	bg[NORMAL]      = @base_color
+	bg[PRELIGHT]    = @base_color
 }
 
 style "panel_scale" {
-	bg[NORMAL] = @bg_color
+	bg[NORMAL]      = @bg_color
 }
 
 widget "volals*whitewd*" style "panel_window"
