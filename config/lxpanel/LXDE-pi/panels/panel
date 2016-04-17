@@ -111,9 +111,9 @@ Plugin {
   }
 }
 Plugin {
-	type=dhcpcdui
-	Config {
-	}
+  type=bluetooth
+  Config {
+  }
 }
 Plugin {
   type=space
@@ -122,9 +122,20 @@ Plugin {
   }
 }
 Plugin {
-	type=volumealsa
-	Config {
-	}
+  type=dhcpcdui
+  Config {
+  }
+}
+Plugin {
+  type=space
+  Config {
+    Size=2
+  }
+}
+Plugin {
+  type=volumealsa
+  Config {
+  }
 }
 Plugin {
   type=space
