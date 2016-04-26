@@ -62,7 +62,7 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=/usr/share/raspi-ui-overrides/applications/epiphany-browser.desktop
+      id=/usr/share/applications/lxde-x-www-browser.desktop
     }
     Button {
       id=/usr/share/raspi-ui-overrides/applications/pcmanfm.desktop
