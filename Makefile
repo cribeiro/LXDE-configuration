@@ -50,7 +50,7 @@ install:
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/*.* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/
 	${INSTALL} -m ${RWPERM} -D themes/PiX/gtk-3.0/assets/* ${DESTDIR}${GTHEMEDIR}PiX/gtk-3.0/assets/
 	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/themerc ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
-    ${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/*.xbm ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
+	${INSTALL} -m ${RWPERM} themes/PiX/openbox-3/*.xbm ${DESTDIR}${GTHEMEDIR}PiX/openbox-3/
 
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}
 	${INSTALL} -d ${DESTDIR}${THEMEDIR}PiX/
