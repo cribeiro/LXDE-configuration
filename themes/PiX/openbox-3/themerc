@@ -5,7 +5,6 @@ window.active.label.bg: parentrelative
 window.active.label.text.color: #ffffff
 window.active.label.text.font: shadow=n
 window.active.button.*.image.color: #F4F5F6
-window.active.button.hover.bg.border.color: #F4F5F6
 window.active.border.color: #D0D0D0
 window.active.client.color: #EEEFEE
 
@@ -16,7 +15,6 @@ window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #70747D
 window.inactive.label.text.font: shadow=n
 window.inactive.button.*.image.color: #6D6C6C
-window.inactive.button.hover.bg.border.color: #6D6C6C
 window.inactive.border.color: #D0D0D0
 window.inactive.client.color: #EEEFEE
 
