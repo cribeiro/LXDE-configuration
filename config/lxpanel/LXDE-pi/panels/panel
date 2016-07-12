@@ -32,8 +32,7 @@ Plugin {
 Plugin {
   type=menu
   Config {
-    name=Menu
-    image=/usr/share/raspberrypi-artwork/raspitr.png
+    image=/usr/share/raspberrypi-artwork/ltgry.png
     system {
     }
     separator {
