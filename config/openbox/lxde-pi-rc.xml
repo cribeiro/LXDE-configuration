@@ -50,6 +50,7 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
+    <roundCorners>yes</roundCorners>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Roboto Light</name>

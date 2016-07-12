@@ -31,7 +31,6 @@ window.inactive.client.color: #EEEFEE
 border.width: 0
 window.handle.width: 0
 window.client.padding.width: 1
-window.corner.width: 1
 
 # window title
 window.label.text.justify: center
