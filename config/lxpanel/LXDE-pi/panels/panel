@@ -32,7 +32,7 @@ Plugin {
 Plugin {
   type=menu
   Config {
-    image=/usr/share/raspberrypi-artwork/ltgry.png
+    image=/usr/share/icons/PiX/32x32/emblems/rpi.png
     system {
     }
     separator {
