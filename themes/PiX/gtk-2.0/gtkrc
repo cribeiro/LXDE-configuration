@@ -1,7 +1,7 @@
 # PiX gtk+-2.0 theme. Based on Adwaita and Clearlooks - modified by Simon Long (simon@raspberypi.org)
 
 # Colour scheme
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext_color:#313739\nselected_fg_color:#FFFFFF\nselected_bg_color:#4A90D9\ninsensitive_bg_color:#F4F4F2\ntooltip_fg_color:#FFFFFF\ntooltip_bg_color:#A0A0A0"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#2E3436\nbg_color:#EDEDED\ntext_color:#313739\nselected_fg_color:#FFFFFF\nselected_bg_color:#4D98F5\ninsensitive_bg_color:#F4F4F2\ntooltip_fg_color:#FFFFFF\ntooltip_bg_color:#A0A0A0"
 
 # Enable auto-mnemonics
 gtk-auto-mnemonics = 1
@@ -1206,6 +1206,16 @@ style "panel_scale" {
 
 widget "volals*whitewd*" style "panel_window"
 widget "volals*whitewd*volscale*" style "panel_scale"
+
+# Chromium
+
+style "chrome-gtk-frame"
+{
+    ChromeGtkFrame::frame-color = @bg_color
+    ChromeGtkFrame::inactive-frame-color = @bg_color
+}
+
+class "ChromeGtkFrame" style "chrome-gtk-frame"
 
 
 
