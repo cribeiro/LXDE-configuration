@@ -288,7 +288,7 @@
     </keybind>
     <keybind key="C-A-T">
       <action name="Execute">
-         <command>lxterminal</command>
+         <command>x-terminal-emulator</command>
       </action>
     </keybind>
     <!--keybindings for LXPanel -->
