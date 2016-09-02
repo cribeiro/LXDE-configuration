@@ -39,14 +39,14 @@ Plugin {
     }
     item {
       name=Run...
-      image=gnome-run
+      image=system-run
       command=run
     }
     separator {
     }
     item {
       name=Shutdown...
-      image=gnome-logout
+      image=system-shutdown
       command=logout
     }
   }
