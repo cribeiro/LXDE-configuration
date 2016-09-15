@@ -20,7 +20,7 @@ style "default"
 
 	GtkWidget::focus-line-width                 = 1
 	GtkWidget::tooltip-radius		            = 3
-	GtkWidget::tooltip-alpha		            = 224
+	GtkWidget::tooltip-alpha		            = 255
 	GtkWidget::new-tooltip-style	            = 1
 
 	GtkMenuBar::window-dragging                 = 1
