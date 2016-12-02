@@ -26,13 +26,13 @@ Global {
 Plugin {
   type=space
   Config {
-    Size=2
+    Size=4
   }
 }
 Plugin {
   type=menu
   Config {
-    image=/usr/share/raspberrypi-artwork/rpiwide.png
+    image=/usr/share/raspberrypi-artwork/launch.png
     system {
     }
     separator {
